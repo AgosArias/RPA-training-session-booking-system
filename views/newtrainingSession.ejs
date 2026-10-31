@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<% include partials/head %>
+	<div class="wrapper">
+		<h1>
+			<%= title %>
+		</h1>
+		<div class="ra-r"></div>
+
+		<body>
+
+			<div style="margin:0 auto ; width:50%; padding:20px">
+				<form action="/trainingSession/create" method="post">
+					<label>RPA training topic</label>
+					<select name="trainingTopic" required>
+						<option value="UiPath Fundamentals">UiPath Fundamentals</option>
+						<option value="Process Analysis and Automation Design">Process Analysis and Automation Design
+						</option>
+						<option value="Working with Queues and Orchestrator">Working with Queues and Orchestrator
+						</option>
+						<option value="Exception Handling and Troubleshooting">Exception Handling and Troubleshooting
+						</option>
+					</select>
+
+					<label>Participant name</label>
+					<input type="text" name="personName" required>
+
+					<label>Participant ID</label>
+					<input type="text" name="personId" minlength="10" maxlength="10" required>
+
+					<label>Training date and time</label>
+					<input type="datetime-local" name="sessionDate" required>
+
+					<label>Card number</label>
+					<input type="text" name="cardNumber" required>
+
+					<label>Expiry date</label>
+					<input type="text" name="cardExpiry" placeholder="MM/YY" required>
+
+					<label>Security code</label>
+					<input type="password" name="securityCode" required>
+
+					<button type="submit">Book session</button>
+				</form>
+			</div>
+		</body>
+	</div>
+	</div>
+	<% include partials/foot %>
+
+</html>

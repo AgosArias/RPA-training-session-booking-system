@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<% include partials/head %>
+	<div class="wrapper">
+		<h1>
+			<%= title %>
+		</h1>
+		<div class="ra-r"></div>
+
+		<body>
+			<table class="table table-inverse">
+				<thead>
+					<tr>
+						<th>RPA topic</th>
+						<th>Participant</th>
+						<th>Participant ID</th>
+						<th>Training date</th>
+						<th>Booking created</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<% for(var i=0; i < trainingSessionList.length; i++) { %>
+						<tr>
+							<td><%= trainingSessionList[i].trainingTopic %></td>
+							<td><%= trainingSessionList[i].personName %></td>
+							<td><%= trainingSessionList[i].personId %></td>
+							<td><%= trainingSessionList[i].sessionDate %></td>
+							<td><%= trainingSessionList[i].createdAt %></td>
+						</tr>
+						<% } %>
+				</tbody>
+
+			</table>
+
+		</body>
+	</div>
+	</div>
+	<% include partials/foot %>
+
+</html>
