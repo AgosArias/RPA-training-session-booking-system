@@ -8,8 +8,6 @@ var indexRouter = require('./routes/index');
 
 var trainingSessionRouter = require('./routes/trainingSessionRouter');
 
-2.
-
 var app = express();
 
 app.set('views', path.join(__dirname, 'views'));
