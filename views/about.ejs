@@ -2,13 +2,37 @@
 <div class="wrapper">
 	<h1><%= title %></h1>
 	<div class="ra-r">
-<p>To book a training session:</p>
-	<ol>
-		<li>Select “Book a session” in the menu.</li>
-		<li>Complete the participant and session details.</li>
-		<li>Select “Book session” to submit the form.</li>
-	</ol>
-	<p>Select “View sessions” to see the training sessions.</p>
-	</div>
+	<section class="info-hero">
+		<p class="info-kicker">ABOUT THE PROJECT</p>
+		<h1><%= title %></h1>
+		<p class="info-intro">
+			RPA Training is a booking website for practical sessions on
+			Robotic Process Automation. It helps participants explore
+			training topics and register for a session.
+		</p>
+		<a class="info-button" href="/trainingSession/create">
+			Book a training session
+		</a>
+	</section>
+
+	<section class="info-cards">
+		<article class="info-card">
+			<span>01</span>
+			<h2>Explore RPA</h2>
+			<p>Learn about automation concepts and process analysis.</p>
+		</article>
+
+		<article class="info-card">
+			<span>02</span>
+			<h2>Build practical skills</h2>
+			<p>Explore UiPath, Orchestrator, queues and exception handling.</p>
+		</article>
+
+		<article class="info-card">
+			<span>03</span>
+			<h2>Book a session</h2>
+			<p>Choose a training topic and submit your booking details.</p>
+		</article>
+	</section>	</div>
 </div>
 <% include partials/foot %>

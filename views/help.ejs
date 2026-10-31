@@ -1,14 +1,51 @@
 <% include partials/head %>
 <div class="wrapper">
 	<h1><%= title %></h1>
-	<div class="ra-r">
-	<p>To book a training session:</p>
-	<ol>
-		<li>Select “Book a session” in the menu.</li>
-		<li>Complete the participant and session details.</li>
-		<li>Select “Book session” to submit the form.</li>
-	</ol>
-	<p>Select “View sessions” to see the training sessions.</p>
+<section class="info-hero">
+		<p class="info-kicker">NEED A HAND?</p>
+		<h1><%= title %></h1>
+		<p class="info-intro">
+			Follow these steps to book a training session or view your booking.
+		</p>
+	</section>
+
+	<section class="help-steps">
+		<article class="help-step">
+			<span>01</span>
+			<div>
+				<h2>Choose a topic</h2>
+				<p>Open “Book a session” and select an RPA training topic.</p>
+			</div>
+		</article>
+
+		<article class="help-step">
+			<span>02</span>
+			<div>
+				<h2>Complete the form</h2>
+				<p>Enter the participant name, a 10-character ID, and the session date and time.</p>
+			</div>
+		</article>
+
+		<article class="help-step">
+			<span>03</span>
+			<div>
+				<h2>Submit and review</h2>
+				<p>Select “Book session”. Use “View sessions” to see the bookings.</p>
+			</div>
+		</article>
+	</section>
+
+	<section class="help-note">
+		<h2>Payment details</h2>
+		<p>
+			This is a coursework demonstration. Enter fictitious card details;
+			do not use a real card.
+		</p>
+	</section>
+
+	<a class="info-button" href="/trainingSession/create">
+		Book a training session
+	</a>
 	</div>
 </div>
 <% include partials/foot %>
