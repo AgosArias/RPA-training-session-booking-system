@@ -1,14 +1,16 @@
 var mongoose = require('mongoose');
+require('dotenv').config();
 let connectionPromise;
 
 function connectToDatabase()
 {
-	const url = 'mongodb://localhost:27017/rpaTraining';
-	const connect = mongoose.connect(url);
+	const connect = mongoose.connect(process.env.MONGODB_URI, {dbName: 'rpaTraining'});
 	
 	connectionPromise = connect.then((db) => {
 		console.log("Connected correctly to server");
-	}, (err) => { console.log(err); });
+	}, (err) => {     
+				connectionPromise = null;
+				console.log(err); });
 	
 	return connectionPromise;
 }
