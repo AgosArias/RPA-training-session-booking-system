@@ -5,10 +5,10 @@
 	</h1>
 	<div class="ra-r"></div>
 
-	<div style="margin:0 auto ; width:50%; padding:20px">
+	<div class="booking-form">
 		<form action="/trainingSession/create" method="post">
-			<label>RPA training topic</label>
-			<select name="trainingTopic" required>
+			<label for="trainingTopic">RPA training topic</label>
+			<select id="trainingTopic" name="trainingTopic" required>
 				<option value="UiPath Fundamentals">UiPath Fundamentals</option>
 				<option value="Process Analysis and Automation Design">Process Analysis and Automation Design
 				</option>
@@ -18,23 +18,23 @@
 				</option>
 			</select>
 
-			<label>Participant name</label>
-			<input type="text" name="personName" required>
+			<label for="personName">Participant name</label>
+			<input type="text" id="personName" name="personName" required>
 
-			<label>Participant ID</label>
-			<input type="text" name="personId" minlength="10" maxlength="10" required>
+			<label for="personId">Participant ID</label>
+			<input type="text" id="personId" name="personId" minlength="10" maxlength="10" required>
 
-			<label>Training date and time</label>
-			<input type="datetime-local" name="sessionDate" required>
+			<label for="sessionDate">Training date and time</label>
+			<input type="datetime-local" id="sessionDate" name="sessionDate" required>
 
-			<label>Card number</label>
-			<input type="text" name="cardNumber" required>
+			<label for="cardNumber">Card number</label>
+			<input type="text" id="cardNumber" name="cardNumber" required>
 
-			<label>Expiry date</label>
-			<input type="text" name="cardExpiry" placeholder="MM/YY" required>
+			<label for="cardExpiry">Expiry date</label>
+			<input type="text" id="cardExpiry" name="cardExpiry" placeholder="MM/YY" required>
 
-			<label>Security code</label>
-			<input type="password" name="securityCode" required>
+			<label for="securityCode">Security code</label>
+			<input type="password" id="securityCode" name="securityCode" required>
 
 			<button type="submit">Book session</button>
 		</form>
